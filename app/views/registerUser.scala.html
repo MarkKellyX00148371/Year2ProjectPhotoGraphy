@@ -3,7 +3,7 @@
 @import helper._
 
 @main("Register User",user){
-    <p class="lead">Add a new Customer</p>
+    <p class="lead">Sign up for our Website!</p>
 
     @* Display error message from flash, if it is set *@
 	@if(flash.containsKey("error")) {
@@ -35,7 +35,7 @@
                 2. A button that allows the user to cancel without adding an item
             -->
             <div class="actions">
-                <input type="submit" value="Register Customer" class="btn btn-primary">
+                <input type="submit" value="Sign Up" class="btn btn-primary">
                 <a href="@routes.LoginController.registerUser()">
                     <button type="button" class="btn btn-warning">Cancel</button>
                 </a>

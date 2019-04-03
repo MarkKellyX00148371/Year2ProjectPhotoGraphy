@@ -65,14 +65,7 @@ public class HomeController extends Controller {
     public Result about() {
         return ok(about.render(User.getUserById(session().get("email"))));
     }
-<<<<<<< HEAD
-=======
 
-    public Result contact() {
-        return ok(contact.render(User.getUserById(session().get("email")))); 
-    }
-
->>>>>>> 4305d621407ce396c7332600013cdc3442dcf003
     @Security.Authenticated(Secured.class)
     public Result addItem() {
         Form<ItemOnSale> itemForm = formFactory.form(ItemOnSale.class);
