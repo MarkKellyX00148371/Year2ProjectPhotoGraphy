@@ -6,6 +6,7 @@
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style>
+		
 	    .footer { font-weight: bold; color: white; background-color: black; }
 	    .sidecol { font-weight: bold; background-color: steelblue; }
 	    .sidecol h2 { font-weight: bold; }
@@ -15,25 +16,32 @@
 		.sidecol h4 { font-weight: bold; 
 		             color: red;
 		            }
+		body{
+			background:linear-gradient(grey,white);
+					}			
 
 	</style>
 	<title>InstantPics</title>
     </head>
     <body>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse ">
 	    <div class="container-fluid">
 		<div class="navbar-header">
 		    <a class="navbar-brand" href="#">InstantPics</a>
 		</div>
 		<ul class="nav navbar-nav">
             <li @if(pagename == "Home") {class="active"}><a href="@routes.HomeController.index()">Home</a></li>
-		    <li @if(pagename == "On Sale") {class="active"}><a href="@routes.HomeController.onsale()">Products</a></li>
 			<li @if(pagename == "About") {class="active"}><a href="@routes.HomeController.about()">About us</a></li>
+			<li @if(pagename == "Contact") {class="active"}><a href="@routes.HomeController.contact()">Contact Us</a></li>
+
+			@if(user == null) {
 			<li @if(pagename == "Register") {class="active"}><a href="@routes.LoginController.registerUser()">Sign Up</a></li>
+			}
+
 			@if((user != null) && ("admin".equals(user.getRole()))) {
+				<li @if(pagename == "On Sale") {class="active"}><a href="@routes.HomeController.onsale()">Products</a></li>
 				<li @if(pagename == "Administrators") {class="active"}><a href="@routes.HomeController.usersAdmin()">Current Admins</a></li>
 				<li @if(pagename == "Customers") {class="active"}><a href="@routes.HomeController.usersCustomer()">Registered Customers</a></li>
-
 			}
 			
 			
@@ -50,30 +58,13 @@
 
 	<div class="container-fluid">
 	    <div class="row">
-		<div class="col-sm-2">
-		    <div class="well sidecol">
-			<h2>Home Page Category (To Do)</h2>
-			
-		    </div>
-		</div>
-		<div class="col-sm-8">
+		
+		<div class="col-sm-12">
 		    <div class="midcol">
 			@content
 		    </div>
 		</div>
-		<div class="col-sm-2">
-		    <div class="well sidecol">
-			<h3>Contact Us!</h3>
-			<h4>Contact our webpage Administrators via the following details.</h4> 
-			<h5>Mark Kelly</h5>
-			<h6>Email: MarkKellysmail@@gmail.com</h6>
-			<h6>Phone: 0458769</h6>
-			<br>
-			<h5>Ross Cooper</h5>
-			<h6>Email: RossCoopersmail@@gmail.com</h6>
-			<h6>Phone: 0455849</h6>
-		    </div>
-		</div>
+		
 	    </div>
 	    <div class="row">
 		<div class="col-sm-12">
