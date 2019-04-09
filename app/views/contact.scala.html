@@ -1,20 +1,20 @@
 @(user: models.users.User)
 @main("Contact",user){
 
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
 
 <style> 
 
 .contact{
     text-align: center;
 }
-
-.h3{
-    color:yellow;
-}
-
 </style>
-
-
+       
 <div class="contact">
 
 
@@ -28,7 +28,100 @@
 <h4>Email: RossCoopersmail@@gmail.com</h4>
 <h4>Phone: 012485437</h4>
 
+
+<br>
+
+<h4>Below is a list of some of the most frequently asked questions, Click for the answer</h4>
 </div>
+
+<div class="container ">
+        <div class="panel-group" id="faqAccordion">
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                     <h4 class="panel-title">
+                        <a href="#" class="ing">Q: How long does it take to download an image?</a>
+                  </h4>
+    
+                </div>
+                <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                         <h5><span class="label label-primary">Answer</span></h5>
+    
+                        <p> Downloading an image should take less than a minute to complete but may take a little longer depending on the size of the file. If the download says it is going to take over 10 minutes then you should contact our web administrators as there might be an error in the file. Ant issues that occur regarding downloading and image will be resolved and fixed by our staff <a href="http://jquery2dotnet.com/" class="label label-success"></a> 
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+                     <h4 class="panel-title">
+                        <a href="#" class="ing">Q: Can I be refunded?</a>
+                  </h4>
+    
+                </div>
+                <div id="question1" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                         <h5><span class="label label-primary">Answer</span></h5>
+    
+                        <p> A customer can not be refunded unless there is a issue or error on our side, then a customer can be refunded or if the customer wants we can try to fix the issue and give them the same but working image.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+                     <h4 class="panel-title">
+                        <a href="#" class="ing">Q: When will we be making more images available for download?</a>
+                  </h4>
+    
+                </div>
+                <div id="question2" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                         <h5><span class="label label-primary">Answer</span></h5>
+    
+                        <p>Our website is updated on a weekly basis with new images in every category along with special events and new deals on certain images. There also may be new features added to the website but these won't be on a weekly basis and mabye more of a monthly basis.  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default ">
+                <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+                     <h4 class="panel-title">
+                        <a href="#" class="ing">Q: Can I make a request for certain images?</a>
+                  </h4>
+    
+                </div>
+                <div id="question3" class="panel-collapse collapse" style="height: 0px;">
+                    <div class="panel-body">
+                         <h5><span class="label label-primary">Answer</span></h5>
+    
+                        <p>Customers can request for certain images but we cannot promise we can get them, customers can request for just more images in a certain category and if a category has a medium to high demand of requests then more images will be added to that category.  </p>
+                    </div>
+                    </div> 
+                </div>
+                <div class="panel panel-default ">
+                        <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+                             <h4 class="panel-title">
+                                <a href="#" class="ing">Q: Can I use the image I download wherever I want?</a>
+                          </h4>
+            
+                        </div>
+                        <div id="question4" class="panel-collapse collapse" style="height: 0px;">
+                            <div class="panel-body">
+                                 <h5><span class="label label-primary">Answer</span></h5>
+            
+                                <p>Yes, when and image is purchased and downloaded the buyer gets full rights to use the image wheverever he/she wants, this might be for the own website or for an advertisment or a presentation. If you have anymore queries regarding the rights to the images you should contact our staff members listed above. </p>
+                            </div>
+                            </div>
+        
+                            
+                        </div>
+            </div>
+            </div>
+        
+        <!--/panel-group-->
+    
+
+
+
 
 
 
