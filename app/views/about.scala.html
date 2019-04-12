@@ -1,6 +1,65 @@
 @(user: models.users.User)
 @main("About",user){
+
+<style>
+.leftSide{
+text-align: center;
+}
+
+.rightSide{
+    text-align: center;
+}
+
+.goal{
+    text-align: center;
+    
+}
+
+h2{
+    text-decoration-line: underline;
+}
+</style>
+
+
 <h1>About Us!</h1>
-<h3>Talk about the photographers, Products, How the rights to the images work when downloaded,</h3>
-<h4>Add a bootstrap FAQ with questions and answers related to the WebPage</h4>
+<h3>Learn more about our team and our website along with the the services we provide.</h3>
+
+<div class="container-fluid">
+
+<div class="row">
+		
+		<div class="col-sm-12">
+		    <div class="goal">
+            <h2><b>Our Goal</b></h2>
+            <h4><em>The goal of our website is to give customers the abilty to purchase and download images instantly from all over the world</em></h4> 
+		    </div>
+        </div>
+    </div>
+
+
+	    <div class="row">
+		
+		<div class="col-sm-6">
+		    <div class="leftSide">
+            <h2><b>Our Team</b></h2><br>
+            <h4><b>Our team consists of 2 Website Administrators</b></h4><br>
+            <h5>Mark Kelly - A student currently in his second year of a IT Management course in ITT (Institute of Technology Tallaght)</h5>
+            <h5>Ross Cooper - Another student currently in his second year of a IT Management course in ITT (Institute of Technology Tallaght)</h5><br>
+            <h5>Our two web administrators work along with a web development team to consistently update and improve this web application. Our web development team has highly skilled developers with years of experience in developing, updating and fixing web features. </h5>
+           <br>
+          </div>
+        </div>
+        
+        <div class="col-sm-6">
+                <div class="rightSide">
+                <h2><b>Our Service</b></h2>
+                </div>
+            </div>
+
+
+		
+        </div>
+        
+    </div>
+
 }	    
