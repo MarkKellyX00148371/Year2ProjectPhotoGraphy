@@ -81,7 +81,7 @@ footer ul li a:hover{
 		<ul class="nav navbar-nav">
             <li @if(pagename == "Home") {class="active"}><a href="@routes.HomeController.index()">Home</a></li>
 			<li @if(pagename == "About") {class="active"}><a href="@routes.HomeController.about()">About us</a></li>
-			<li @if(pagename == "Contact") {class="active"}><a href="@routes.HomeController.contact()">Contact Us</a></li>
+			<li @if(pagename == "Contact") {class="active"}><a href="@routes.HomeController.contact()">Contact us</a></li>
 
 			@if(user == null) {
 			<li @if(pagename == "Register") {class="active"}><a href="@routes.LoginController.registerUser()">Sign Up</a></li>
